@@ -37,21 +37,21 @@ nav a {
 }
 
 .photos {
-  max-width: 60%; /* Adjust to your preference */
+  max-width: 80%; /* Adjust to your preference */
   margin: 0 auto;
   overflow: hidden;
 }
 
 .photos img {
-  width: 100%; /* Adjust to your preference */
+  width: 40%; /* Adjust to your preference */
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin: 0 10px; /* Add margin for spacing between images */
   display: none;
-  transition: opacity 0.5s ease-in-out; /* Smooth transition between images */
+  transition: opacity 0.5s ease-in-out;
 }
 
 .photos img.active {
-  display: block;
+  display: inline-block;
   opacity: 1;
 }
 
