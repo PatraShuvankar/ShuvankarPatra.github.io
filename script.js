@@ -1,9 +1,13 @@
-function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const photos = document.querySelectorAll(".photos img");
+  let currentPhotoIndex = 0;
 
-    const selectedSection = document.getElementById(sectionId);
-    selectedSection.style.display = 'block';
-}
+  function showNextPhoto() {
+    photos[currentPhotoIndex].style.opacity = 0;
+    currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+    photos[currentPhotoIndex].style.opacity = 1;
+  }
+
+  // Start the slideshow
+  setInterval(showNextPhoto, 5000); // Change the time (in milliseconds) to control the speed of the slideshow
+});
