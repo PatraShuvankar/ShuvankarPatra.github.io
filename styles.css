@@ -5,12 +5,26 @@ body, h1, h2, h3, p {
 
 body {
   font-family: 'Century', sans-serif;
+  background: linear-gradient(45deg, #FCE38A, #F38181); /* Gradient background color */
+  background-size: 400% 400%; /* For animation effect */
+  animation: gradientAnimation 15s infinite alternate; /* Animation for gradient */
+  color: #fff; /* Text color */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 header {
   text-align: center;
-  background-color: #f0f0f0;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px; /* Rounded corners */
 }
 
 header h1 {
@@ -34,18 +48,19 @@ nav a {
 
 .main-content {
   text-align: center;
+  padding: 20px;
 }
 
 .photos {
-  max-width: 80%; /* Adjust to your preference */
+  max-width: 80%;
   margin: 0 auto;
   overflow: hidden;
 }
 
 .photos img {
-  width: 40%; /* Adjust to your preference */
+  width: 40%;
   border-radius: 10px;
-  margin: 0 10px; /* Add margin for spacing between images */
+  margin: 0 10px;
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
@@ -63,7 +78,8 @@ nav a {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
