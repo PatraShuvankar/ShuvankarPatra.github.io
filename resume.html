@@ -12,14 +12,14 @@
     <h1>SHUVANKAR PATRA</h1>
     <p>712104, Bandel, Hooghly, West Bengal, India<br>+91 8910387977 | pshuvankar08@gmail.com</p>
     <nav>
-      <a href="resume.html">My Resume</a>
+      <a href="#" onclick="openModal()">My Resume</a>
       <a href="research.html">My Research Experience</a>
       <a href="#">Contact Me</a>
     </nav>
   </header>
 
   <section class="main-content">
-        <div class="skills">
+    <div class="skills">
       <h2>SKILLS:</h2>
       <p>Molecular Biology techniques: Molecular cloning of three genes into two expression vectors (pDJN1 and pGEX-6P-1), Genomic and Plasmid DNA extraction, RNA extraction, PCR, and Western blot techniques.</p>
       <p>Cell culture techniques: I handled MCF-7 and MDA-MB-231 cell lines and performed cell cytotoxicity assay (MTT Assay).</p>
@@ -27,7 +27,6 @@
       <p>Protein purification techniques: FPLC (AKTA PURE) - GST tagged and his tagged affinity chromatography, Ion Exchange chromatography, Heparin chromatography and Size exclusion chromatography.</p>
       <p>Advanced Microscopy Techniques: Negative staining TEM grid preparation and visualization using TEM, Cryo-Electron Microscopy for high-resolution structure prediction.</p>
       <p>Bioinformatics: PyMOL, SnapGene, CryoEM data assessment (CryoSPARC), Structure prediction (AlphaFold), Tools (BLAST, Clustal Omega)</p>
-    </div>
     </div>
 
     <div class="experience">
@@ -42,7 +41,7 @@
       <h3>MSc dissertation project at UNESCO-RCB, Faridabad (Sep,2022-Aug,2023)</h3>
       <p>Supervisor: Prof. Dr. Deepak T. Nair.</p>
       <p>Thesis title: Cloning, purification, and reconstitution of the multi-subunit clamp loader.</p>
-      <p>[In a one-year project, I successfully cloned three genes of Mycobacterium tuberculosis onto two different expression vectors. I conducted expression check experiments, purified the three subunits using various chromatography techniques, and reconstituted the protein complex. Additionally, I performed negative stain electron microscopy for structural visualisation.]</p>
+      <p>[In a one-year project, I successfully cloned three genes of Mycobacterium tuberculosis onto two different expression vectors. I conducted expression check experiments, purified the three subunits using various chromatography techniques, and reconstituted the protein complex. Additionally, I performed negative stain electron microscopy for structural visualization.]</p>
 
       <h3>Short summer internship project at Kalyani University, West Bengal (May,2018-July,2018)</h3>
       <p>Supervisor: Dr. Arunima Biswas.</p>
@@ -60,6 +59,7 @@
       <p>[This is a review paper I wrote for my undergraduate course curriculum.]</p>
 
     </div>
+
     <div class="academic-background">
       <h2>ACADEMIC BACKGROUND:</h2>
       <p>Masters of Science in Biotechnology (2021-2023)<br>UNESCO Regional Centre for Biotechnology, Faridabad<br>CGPA: 7.42/9.00</p>
@@ -100,7 +100,16 @@
     <p>Phone: +918910387977</p>
   </footer>
 
+  <!-- Modal for Resume -->
+  <div class="modal-container" id="resumeModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>SHUVANKAR PATRA</h2>
+      <!-- ... Add the rest of your resume content here ... -->
+      <a href="files/resume.pdf" download="ShuvankarPatra_Resume">Download Resume</a>
+    </div>
+  </div>
+
   <script src="script.js" defer></script>
 </body>
 </html>
-
