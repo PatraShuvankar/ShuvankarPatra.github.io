@@ -12,27 +12,169 @@
     <h1>SHUVANKAR PATRA</h1>
     <p>Biologist | Passionate Researcher | Critical Thinker</p>
     <nav>
-      <a href="#">My Resume</a>
-      <a href="#">My Research Experience</a>
-      <a href="#">Contact Me</a>
+      <a href="#" class="active" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('resume')">My Resume</a>
+      <a href="#" onclick="showPage('research')">My Research Experience</a>
     </nav>
   </header>
 
   <section class="main-content">
-    <div class="photos">
-      <img src="images/IMG_20231213_170229.jpg" alt="Photo 1" class="active">
-      <img src="images/IMG_20231213_113423.jpg" alt="Photo 2">
-      <img src="images/IMG_20231213_170303.jpg" alt="Photo 3">
-      <img src="images/IMG_20231213_170558.jpg" alt="Photo 4">
-      <img src="images/Screenshot_2023-12-13-17-04-12-61.jpg" alt="Photo 5">
+    <!-- Photo slideshow -->
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="images/IMG_20231213_170229.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/IMG_20231213_113423.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/IMG_20231213_170303.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/IMG_20231213_170558.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <img src="images/Screenshot_2023-12-13-17-04-12-61.jpg" style="width:100%">
+      </div>
     </div>
-    <div class="personal-details">
+
+    <!-- About Section -->
+    <div class="content-section" id="home-section">
+      <h2>About Me</h2>
       <p>
-        I am a diligent, hardworking fellow with an excellent work ethic and one year of graduate-level research experience.
-        I have the academic and research abilities and the personal qualities, such as resilience and adaptability,
-        to excel in a PhD program in a foreign country. Welcome to my virtual corner! Join me on this journey of scientific exploration and discovery. 🚀✨
+        I am a diligent and hardworking individual with a strong work ethic. With one year of graduate-level research experience, 
+        I possess the academic and research abilities required for success in a Ph.D. program in a foreign country. Welcome to my virtual corner!
+        Join me on this journey of scientific exploration and discovery. 🚀✨
       </p>
     </div>
+
+    <!-- My Resume Section -->
+    <div class="content-section" id="resume-section" style="display: none;">
+      <!-- Add your resume content here -->
+      <h2>My Resume</h2>
+      <p>                              Shuvankar Patra
+                              712104, Bandel, Hooghly, West Bengal, India
+                              +91 8910387977 | pshuvankar08@gmail.com
+----------------------------------------------------------------------------------------------------------------
+SKILLS:
+Molecular Biology techniques: Molecular cloning of three genes into two expression vectors (pDJN1 and pGEX-6P-1), Genomic and Plasmid DNA extraction, RNA extraction, PCR, and Western blot techniques.
+Cell culture techniques: I handled MCF-7 and MDA-MB-231 cell lines and performed cell cytotoxicity assay (MTT Assay).
+Protein expression experiments: Protein expression check experiments of three different mycobacterial proteins in six different E. coli expression strains, pH, and temperature conditions.
+Protein purification techniques: FPLC (AKTA PURE) - GST tagged and his tagged affinity chromatography, Ion Exchange chromatography, Heparin chromatography and Size exclusion chromatography.
+Advanced Microscopy Techniques: Negative stating TEM grid preparation and visualisation using TEM, Cryo-Electron Microscopy for high-resolution structure prediction.
+Bioinformatics: PyMOL, SnapGene, CryoEM data assessment (CryoSPARC), Structure prediction (AlphaFold), Tools (BLAST, Clustal Omega)
+----------------------------------------------------------------------------------------------------------------
+EXPERIENCE:
+Research experience: 
+•	Research trainee at UNESCO-RCB, Faridabad (Current position)
+
+Supervisor: Prof. Dr. Deepak T. Nair.
+
+[Currently, I am focused on getting a high-resolution structure of the clamp loader complex from Mycobacterium tuberculosis using Cryo-EM. I am using CryoSPARC software for the refinement of the resultant data.]
+
+
+•	MSc dissertation project at UNESCO-RCB, Faridabad (Sep,2022-Aug,2023) 
+
+Supervisor: Prof. Dr. Deepak T. Nair.
+
+Thesis title: Cloning, purification, and reconstitution of the multi-subunit clamp loader.
+
+[ In a one-year project, I successfully cloned three genes of Mycobacterium tuberculosis onto two different expression vectors. I conducted expression check experiments, purified the three subunits using various chromatography techniques, and reconstituted the protein complex. Additionally, I performed negative stain electron microscopy for structural visualisation.]
+
+
+•	Short summer internship project at Kalyani University, West Bengal (May,2018-July,2018)
+
+Supervisor: Dr. Arunima Biswas.
+
+Project title:  Investigating Elevated Phosphodiesterase Expression and its Impact on cAMP Levels in Breast Cancer Stem Cells.
+
+[ In this project, I acquired proficiency in Western blotting, cell culture techniques, and cell cytotoxicity assays.]
+
+
+•	Field work at Sagar Island, West Bengal (September - October 2018)
+
+Organiser: Organised by Zoology Dept. Sagar Island under the supervision of Professor Amalesh Choudhury. 
+
+Title: Biodiversity of Sagar Island and Educational Mangrove Eco-tourism.
+
+[ During our fieldwork, we identified numerous key species inhabiting Sagar Island and geotagged some observed bird species.]
+
+
+•	Scientific writing at Ramakrishna Mission Vidyamandira, West Bengal (2019)
+
+Supervisor: Dr. Anirban Sengupta.
+
+Project title: Etiology of Alzheimer’s disease. 
+
+[ This is a review paper I wrote for my undergraduate course curriculum.]
+----------------------------------------------------------------------------------------------------------------
+ACADEMIC BACKGROUND: 
+      Masters of Science in Biotechnology (2021-2023) 
+       UNESCO Regional Centre for Biotechnology, Faridabad
+       CGPA: 7.42/9.00
+
+     Bachelor of Science in Zoology (2017-2020) 
+     Ramakrishna Mission Vidyamandira, West Bengal 
+     CGPA: 8.86/10 
+
+----------------------------------------------------------------------------------------------------------------AWARDS & CERTIFICATES:
+         
+•	DBT-Ramachandran Fellow                                                2021-2023
+•	All India Rank in GAT-B:  57                                             2021
+•	All India Rank in JAM BT: 184                                            2021
+----------------------------------------------------------------------------------------------------------------
+EXTRACURRICULAR: 
+
+•	Volunteered and participated in the IUBMB international conference (2022).
+•	Volunteered and participated in the EMBO international conference (2022).
+•	Actively participated in the National Service Scheme (2017-19).
+•	Student Coordinator in Ramakrishna Mission Vidyamandira (2018).
+----------------------------------------------------------------------------------------------------------------
+REFERENCES: 
+•	Dr. Deepak T. Nair 
+Professor, UNESCO - Regional Centre for Biotechnology, Faridabad.
+E-mail: deepak@rcb.res.in, Phone: +91 129-2848844
+•	Dr. Deepti Jain
+Associate professor, UNESCO - Regional Centre for Biotechnology, Faridabad.
+E-mail: deepti@rcb.res.in, Phone: +91 129-2848839
+•	Dr. Arunima Biswas
+Assistant professor, Zoology Department, Kalyani University, West Bengal.
+E-mail: arunima10@klyuniv.ac.in, Phone: 09836793528
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</p>
+    </div>
+
+    <!-- My Research Experience Section -->
+    <div class="content-section" id="research-section" style="display: none;">
+      <!-- Add your research experience details here -->
+      <h2>My Research Experience</h2>
+      <p>Research experience
+Shuvankar Patra
+
+BSc Research experience:
+During my B.Sc program, I had the privilege of participating in a summer internship program at the University of Kalyani, West Bengal, under the supervision of Dr. Arunima Biswas. The primary focus of my summer internship revolved around unravelling the intricate roles played by cAMP, a pivotal secondary messenger, in breast cancer stem cells. We directed our research toward two distinct cell lines: MCF-7 (an estrogen receptor/progesterone receptor-positive cell line) and MDA-MB-231 (a triple-negative cell line). Our initial observations revealed notable disparities in the levels of phosphodiesterase, an enzyme responsible for the degradation of cAMP, between cancer cell lines and normal cells. The increase in the down regulator of cAMP is proportional to reducing levels in cAMP. We employed a pharmacological approach targeting the phosphodiesterase enzyme to explore the therapeutic potential. Subsequently, we conducted comprehensive cAMP quantitative assays and cell cytotoxicity assessments, explicitly performing the MTT assay.
+The results of our experiments indicated the successful inhibition of phosphodiesterase activity by the administered drugs. This inhibition, in turn, resulted in a substantial increase in cAMP levels, ultimately leading to the selective eradication of cancer cells. Throughout my two-month summer training, I acquired valuable expertise in essential laboratory techniques, including proficient cell culture methodologies, precise western blot analysis, and the meticulous execution of in-vitro assays, notably the MTT and cAMP quantitative assays. 
+Expertise in Techniques: Western Blotting, Cell culture techniques, Cell cytotoxicity assays (MTT assay), cAMP quantitative assay.
+
+
+
+MSc Research Experience:
+My master's program involved conducting my dissertation research under Prof. Deepak T. Nair's expert guidance within the Genomic Integrity and Evolution laboratory at the Regional Centre of Biotechnology, Faridabad. The primary objective of my dissertation was to clone three genes, namely tau, delta, and delta prime, which encode the clamp loader complex in Mycobacterium sp. Subsequently, we aimed to purify these proteins to facilitate the reconstitution of the complex.
+Initially, our strategy involved cloning the three genes into the pDJN1 expression vector. The Tau protein exhibited robust expression levels within the pDJN1 expression vector. However, the expression of the other two proteins, Delta and Delta prime, proved elusive. To overcome this challenge, we employed an alternative expression vector, the pGEX-6P-1 vector. With this vector, we achieved successful expression of each protein. Nonetheless, delta prime was predominantly found within the inclusion bodies, indicating issues with its solubility.
+To address the solubility problem associated with delta prime, we mix the lysate of both proteins (Delta and Delta prime) and then purify them. The idea was that the soluble Delta protein would pull the insoluble Delta prime in the soluble fraction. This experimental tactic yielded fruitful results, as we were able to successfully purify all three proteins and subsequently reconstitute the clamp loader complex. We performed mass spectrometry to confirm the identity of our complex.
+To visually confirm the formation of the reconstituted complex, we employed Negative Stain Electron Microscopy. This technique allowed us to visualise and analyse the structural characteristics of the complex. Notably, we identified distinct ring and horse-shoe-shaped particles in the electron micrographs, which we considered indicative of our putative clamp-loader complex. This finding provided valuable insights into the structural attributes of the complex and underscored the success of our reconstitution effort.
+Expertise in Techniques: Molecular cloning, Protein expression check, Mass spectroscopy (Triple-TOF), Protein purification using various liquid chromatography techniques (AKTA-PURE), Negative stain Electron Microscopy (TEM grid preparation and visualisation). 
+
+
+Present research:
+Currently, we are trying to elucidate the high-resolution structure of the clamp loader complex of Mycobacterium tuberculosis with the help of Cryo-EM. We are using Cryo SPARC to refine the resultant data.
+</p>
+    </div>
+
   </section>
 
   <footer>
@@ -41,5 +183,16 @@
   </footer>
 
   <script src="script.js" defer></script>
+  <script>
+    function showPage(page) {
+      // Hide all sections
+      document.getElementById('home-section').style.display = 'none';
+      document.getElementById('resume-section').style.display = 'none';
+      document.getElementById('research-section').style.display = 'none';
+
+      // Show the selected section
+      document.getElementById(`${page}-section`).style.display = 'block';
+    }
+  </script>
 </body>
 </html>
